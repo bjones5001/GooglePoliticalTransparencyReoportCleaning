@@ -4,7 +4,7 @@
 import pandas as pd
 
 #use pandas to load our csv
-df = pd.read_csv("/home/brian/Downloads/google-political-ads-transparency-bundle/google-political-ads-creative-stats.csv")
+df = pd.read_csv("/home/usr/Downloads/google-political-ads-transparency-bundle/google-political-ads-creative-stats.csv")
 
 #set the key value to advertiser id
 df.set_index("Advertiser_ID", inplace=True)
@@ -55,4 +55,4 @@ df2 = df1.drop(['Spend_Range_Min_EUR',
 
 print(df2)
 
-df2.to_csv("/home/brian/Documents/Projects/gopdata.csv")
+df2.to_csv("/home/usr/Documents/Projects/gopdata.csv")
